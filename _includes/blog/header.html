@@ -5,19 +5,14 @@
   <div class="content">
     <div class="row wrap center">
       <div class="col col-100 col-md-40 col-lg-40 hidden-sm">
-
-        {% if site.google_cse > 0 %}
-        {% include general/gcse.html %}
-        {% endif%}
-              
       </div>
       <div class="col col-100 col-md-60 col-lg-60 hidden-sm nav-bar">
         <ul>
           <li>
-            <a {% if page.layout == "default" %}class="active"{% endif %} href="{{ "/blog"  }}">Todo</a>
+            <a {% if page.layout == "default" %}class="active"{% endif %} href="{{ '/blog' | prepend: site.baseurl }}">Todo</a>
           </li>
           {% for item_page in site.pages %}{% if item_page.layout == "category" %}<li>
-              <a {% if page.title == item_page.title %}class="active"{% endif %} href="{{ item_page.url }}">{{ item_page.title }}</a>
+              <a {% if page.title == item_page.title %}class="active"{% endif %} href="{{ item_page.url | prepend: site.baseurl }}">{{ item_page.title }}</a>
           </li>{% endif %}{% endfor %}
         </ul>
       </div>

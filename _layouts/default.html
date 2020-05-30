@@ -2,8 +2,8 @@
 <html amp lang="en">
   {% include general/head.html %}
   <body>
-    {% include general/gtm.html %} {% if page.layout != 'post' %}{% include
-    general/share-vertical.html %}{% endif %} {% include general/sidebar.html %}
-    {{ content }} {% include general/footer.html %}
+    {% if page.layout != 'post' %}{% include general/share-vertical.html %}{%
+    endif %} {% include general/sidebar.html %} {{ content }} {% include
+    general/footer.html %}
   </body>
 </html>

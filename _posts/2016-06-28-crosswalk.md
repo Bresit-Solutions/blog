@@ -5,7 +5,7 @@ tags: [native, tips]
 date: 2017-06-08
 categories: tips
 author: nicobytes
-cover: "/blog//images/posts/tips/2016-06-28-crosswalk/cover.jpg"
+cover: "/blog/images/posts/tips/2016-06-28-crosswalk/cover.jpg"
 ---
 
 > Al desarrollar aplicaciones para Android basadas en un **Webview** nos enfrentamos al problema de la fragmentación en dispositivos, es decir hay muchas versiones de Android viejas en el mercado, con **[Crosswalk Project](https://crosswalk-project.org/){:target="\_blank"}** no solo solucionamos el problema de la fragmentación sino que aumentamos el performance de la aplicación.

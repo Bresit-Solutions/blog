@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% include general/gtm.html %}
 {% include blog/header.html %}
 {% for item in site.data.authors %}{% if item.id == page.author%}{% assign author = item %}{% endif %}{% endfor %}
 <div class="content content-title">
@@ -11,10 +10,7 @@ layout: default
       <div class="tags">
         {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %} - 
         {{ page.date | date: '%B %d, %Y' }} por 
-        <a href="{{ author.url }}"><strong>{{ author.name }}</strong></a> 
-        {% if page.editname %}
-         | <a href="https://github.com/ion-book/ion-book.github.io/tree/master/_posts/{{ page.editname }}"><strong>Edita este Post.</strong></a>
-        {% endif %}
+        <a href="{{ author.url | prepend: site.baseurl }}"><strong>{{ author.name }}</strong></a> 
       </div>
       {% if page.versions %}
       <div class="versions">
@@ -48,22 +44,12 @@ layout: default
           <div class="icon icon-social-octocat"></div> Ver demo
         </a>
         {% endif %}
-        {% if page.remember %}
-        <div class="remember-demo">
-          <h4><strong>Recuerda:</strong></h4>
-          <p>Si quieres ejecutar este demo en tu computadora, debes tener el <a target="_blank" href="http://ionicframework.com/docs/v2/getting-started/installation/">entorno</a> de ionic instalado y luego de descargar o clonar el proyecto debes ubicarte en tu proyecto en la terminal y luego ejecutar</p>
-          <div class="highlighter-rouge">
-            <pre class="highlight"><code>npm install</code></pre>
-          </div>
-          <p>esto es para descargar todas las dependencias del proyecto.</p>
-        </div>
-        {% endif %}
       </article>
       <article>
         <hr/>
         <p>Te ha gustado el Post? No te olvides dejarnos una <a href="https://www.facebook.com/pg/ionbook/reviews/">Calificación</a> en Facebook y darle Like al <a href="https://www.facebook.com/pg/ionbook">Facebook Page</a>.
         Espero sea de utilidad y sigan programando :)</p>
-        <p>Por: <a href="{{ author.url }}"><strong>{{ author.name }}</strong></a></p>
+        <p>Por: <a href="{{ author.url | prepend: site.baseurl }}"><strong>{{ author.name }}</strong></a></p>
       </article>
       <article>
         <h3>¡Compártelo!</h3>

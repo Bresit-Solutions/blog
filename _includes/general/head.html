@@ -16,11 +16,7 @@
     }} {% endif %}
   </title>
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
-  href="{{ "/feed.xml"| prepend: site.path }}" /> {% endif %} {% include
-  general/seo.html %} {% if site.pwa_enabled > 0 %}
-  <!-- PWA Stuff -->
-  <link rel="manifest" href="{{ "manifest.json"| prepend: site.path }}"> {%
-  endif%}
+  href="{{ "/feed.xml"| prepend: site.path }}" />
 
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#005AA9" />
@@ -165,58 +161,7 @@
     custom-element="amp-youtube"
     src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"
   ></script>
-  {% endif%} {% if site.ads_enabled > 0 %}
-  <script
-    async
-    custom-element="amp-ad"
-    src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
-  ></script>
-  {% endif %} {% if site.pwa_enabled > 0 %}
-  <script
-    async
-    custom-element="amp-install-serviceworker"
-    src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"
-  ></script>
-  {% endif%} {% if site.push_notifications > 0 %}
-  <script type="text/javascript">
-    (function (p, u, s, h) {
-      p._pcq = p._pcq || [];
-      p._pcq.push(["_currentTime", Date.now()]);
-      s = u.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "https://cdn.pushcrew.com/js/cd961b7fc40d92661a578254340c720d.js";
-      h = u.getElementsByTagName("script")[0];
-      h.parentNode.insertBefore(s, h);
-    })(window, document);
-  </script>
-  {% endif%} {% if page.title == 'Home' || page.title == 'Blog' %} {% if
-  site.google_optimize > 0 %}
-  <style>
-    .async-hide {
-      opacity: 0 !important;
-    }
-  </style>
-  <script>
-    (function (a, s, y, n, c, h, i, d, e) {
-      s.className += " " + y;
-      h.start = 1 * new Date();
-      h.end = i = function () {
-        s.className = s.className.replace(RegExp(" ?" + y), "");
-      };
-      (a[n] = a[n] || []).hide = h;
-      setTimeout(function () {
-        i();
-        h.end = null;
-      }, c);
-      h.timeout = c;
-    })(window, document.documentElement, "async-hide", "dataLayer", 4000, {
-      "GTM-PTG96JX": true,
-    });
-  </script>
-
-  {% endif%} {% endif%} {% if site.google_tagmanager > 0 %} {% include
-  general/gtm.html %} {% endif%} {% if site.hello_bar_enabled > 0 %}
+  {% endif%} {% endif%} {% if site.hello_bar_enabled > 0 %}
   <script
     src="https://my.hellobar.com/eb9a782c5cd1f0579222dd2dc202aac2a57a54af.js"
     type="text/javascript"
