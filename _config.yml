@@ -2,7 +2,7 @@ title: "Bresit Solutions."
 description: "Aprende JavaScript, Ionic, Firebase, Nativescript y desarrolla increibles apps para Android y IOS."
 keywords: "angular, ionic, flutter, java, .netcore, c#, react, reactjs, sprint boot, postgres, elastic search"
 
-baseurl: ""
+baseurl: "/blog"
 urlblog: "/blog"
 cover: "/images/cover.jpg"
 path: "http://www.bresit.com/"
