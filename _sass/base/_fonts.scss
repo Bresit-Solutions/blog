@@ -2,14 +2,13 @@
 
 @font-face {
   font-family: "ionbook";
-  src:url("/fonts/ionbook.eot");
-  src:url("/fonts/ionbook.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/ionbook.woff") format("woff"),
-    url("/fonts/ionbook.ttf") format("truetype"),
-    url("/fonts/ionbook.svg#ionbook") format("svg");
+  src: url("/blog/fonts/ionbook.eot");
+  src: url("/blog/fonts/ionbook.eot?#iefix") format("embedded-opentype"),
+    url("/blog/fonts/ionbook.woff") format("woff"),
+    url("/blog/fonts/ionbook.ttf") format("truetype"),
+    url("/blog/fonts/ionbook.svg#ionbook") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 [class^="icon-"]:before,
