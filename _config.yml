@@ -1,0 +1,34 @@
+title: "Bresit Solutions."
+description: "Aprende JavaScript, Ionic, Firebase, Nativescript y desarrolla increibles apps para Android y IOS."
+keywords: "angular, ionic, flutter, java, .netcore, c#, react, reactjs, sprint boot, postgres, elastic search"
+
+baseurl: "blog"
+urlblog: "/blog"
+cover: "/images/cover.jpg"
+path: "http://www.bresit.com/"
+
+pwa_enabled: 0
+ads_enabled: 0
+push_notifications: 1
+google_optimize: 0
+google_cse: 0
+google_tagmanager: 0
+hello_bar_enabled: 0
+
+timezone: "America/Paraguay"
+
+markdown: kramdown
+permalink: blog/:categories/:title/
+redcarpet:
+  extensions:
+    [
+      "tables",
+      "autolink",
+      "strikethrough",
+      "space_after_headers",
+      "fenced_code_blocks",
+    ]
+sass:
+  style: compressed
+excerpt_separator: <!--summary-->
+exclude: [CNAME, "*.sh", "*.json", "README.md"]

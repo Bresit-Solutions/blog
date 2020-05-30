@@ -1,0 +1,17 @@
+- id: "javico2609"
+  name: Javier González Rodríguez
+  url: "/blog/authors/javico2609"
+  avatar: "https://firebasestorage.googleapis.com/v0/b/ngclassroom-8ba81.appspot.com/o/assets%2FCaptura%20de%20pantalla%202018-03-29%20a%20la(s)%204.59.17%20p.%20m..png?alt=media&token=1cb49f25-fcdd-45c2-9aa5-5766e4a0f657"
+  website: "https://github.com/javico2609"
+  country: "Cuba"
+  bio: "Coder ¦ Web Developer ¦ Mobile Developer"
+  facebook_url: "https://www.linkedin.com/in/javier-gonzalez-843a2597/"
+  social_links:
+    - link: "https://twitter.com/javico_glez"
+      icon: "icon-social-twitter"
+    - link: "https://github.com/javico2609"
+      icon: "icon-social-octocat"
+    - link: "https://www.linkedin.com/in/javier-gonzalez-843a2597/"
+      icon: "icon-linkedin"
+    - link: "https://www.youtube.com/javico2609"
+      icon: "icon-social-youtube"
