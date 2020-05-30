@@ -1,18 +1,18 @@
 ---
 layout: post
 title: "Ionic Native y buenas prácticas"
-tags: [native]  
+tags: [native]
 date: 2017-05-26
 categories: ionic2
 author: nicobytes
-cover: "/images/posts/ionic2/2016-07-05-ionic-native/cover.jpg"
+cover: "/blog//images/posts/ionic2/2016-07-05-ionic-native/cover.jpg"
 ---
 
 > **Ionic-native** es un conjunto de envolturas en ES5/ES6/Typescript para cualquiera de los plugins de **Cordova/Phonegap**, la cual hace que cuando queremos agregar cualquier función nativa a nuestra aplicación sea muy fácil.
 
 <amp-img width="1318" height="764" layout="responsive" src="/images/posts/ionic2/2016-07-05-ionic-native/cover.jpg"></amp-img>
 
-{% include general/net-promoter-score.html %} 
+{% include general/net-promoter-score.html %}
 
 Recordemos que en la versión en ionic1, tuvimos a **ngCordova** que eran servicios que envolvían las funciones de los plugins de **Cordova/Phonegap**. Pero ahora con **ionic native** esto cambio, y los plugins traen una fácil implementación y nos retorna una `Promise` o `Observable` para usar dentro del app.
 
@@ -32,14 +32,13 @@ Vamos a dar una serie de pasos para poder instalar un plugin correctamente y no 
 
 El 65% de los errores se pueden evitar leyendo la documentación, al menos de las funciones que nos interesa consumir del plugin.
 
-La documentacion para **Geolocation** en ionic-native esta [aquí](https://ionicframework.com/docs/native/geolocation/){:target="_blank"}.
-
+La documentacion para **Geolocation** en ionic-native esta [aquí](https://ionicframework.com/docs/native/geolocation/){:target="\_blank"}.
 
 ### Paso 2: Leer la documentación del plugin.
 
 Como explicamos anteriomente ionic-native en un un conjunto de envolturas para conectarse de forma óptima con Cordova. Por eso si queremos más detalle acerca de alguna de las funciones que necesitamos del plugin debemos revisar la documentación del oficial del plugin.
 
-La documentación del plugin oficial para **Geolocation** [aquí](https://github.com/apache/cordova-plugin-geolocation){:target="_blank"}.
+La documentación del plugin oficial para **Geolocation** [aquí](https://github.com/apache/cordova-plugin-geolocation){:target="\_blank"}.
 
 Pero sobre todo en esta documentación debemos revisar la sección de instalacón, ya que algunos plugins para IOS necesitan de variables extra en la instalación. Y en el caso de **Geolocation** es así:
 
@@ -131,7 +130,7 @@ export class HomePage {
 
   watchPosition(){
     let options = {
-      timeout: 50000 
+      timeout: 50000
     }
     let watch = this.geolocation.watchPosition(options);
     watch.subscribe((data) => {
@@ -140,7 +139,7 @@ export class HomePage {
       // data.coords.longitude
     });
   }
-  
+
 ...
 ```
 

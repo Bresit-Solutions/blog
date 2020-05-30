@@ -2,7 +2,7 @@
 # Menu Header
 menu_header:
   - title: Blog
-    url: "/blog"
+    url: "/blog/blog"
     target: "_self"
   - title: "Cursos"
     url: "http://www.bresit.com/"
