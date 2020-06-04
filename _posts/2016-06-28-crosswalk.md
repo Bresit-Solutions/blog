@@ -3,8 +3,8 @@ layout: post
 title: "Aumenta el performance con Crosswalk"
 tags: [native, tips]
 date: 2017-06-08
-categories: tips
-author: nicobytes
+categories: mobile
+author: javico2609
 cover: "/blog/images/posts/tips/2016-06-28-crosswalk/cover.jpg"
 ---
 

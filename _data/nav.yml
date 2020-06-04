@@ -11,7 +11,7 @@ menu_header:
 # Menu Footer
 menu_footer:
   - title: Inicio
-    url: "/"
+    url: "/blog/"
     target: "_self"
   - title: Youtube
     url: "https://www.youtube.com/javico2609?sub_confirmation=1"
@@ -20,5 +20,5 @@ menu_footer:
     url: "http://www.bresit.com/"
     target: "_blank"
   - title: Autores
-    url: "/blog/authors"
+    url: "/blog/blog/authors"
     target: "_self"

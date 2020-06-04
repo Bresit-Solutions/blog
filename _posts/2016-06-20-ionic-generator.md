@@ -3,8 +3,8 @@ layout: post
 title: "Ionic generator y buenas prácticas"
 tags: [news, tools, cli]
 date: 2017-05-04
-categories: tips
-author: nicobytes
+categories: mobile
+author: javico2609
 cover: "/blog/images/posts/tips/2016-06-20-ionic-generator/cover.png"
 repo: https://github.com/ion-book/demo112
 versions:

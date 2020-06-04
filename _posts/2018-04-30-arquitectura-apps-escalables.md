@@ -3,7 +3,7 @@ layout: post
 title: "Arquitectura de Apps escalables en Angular"
 date: 2018-04-30
 tags: [angular, architecture]
-categories: angular
+categories: frontend
 author: javico2609
 cover: "https://firebasestorage.googleapis.com/v0/b/ngclassroom-8ba81.appspot.com/o/posts%2F2018-04-30-arquitectura-apps-escalables%2F600_448893342.jpeg?alt=media&token=0f8cc5aa-4670-4e0e-8323-21d6617abc7a"
 editname: "angular/2018-04-30-arquitectura-apps-escalables.md"

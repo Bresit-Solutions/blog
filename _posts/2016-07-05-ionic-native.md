@@ -3,8 +3,8 @@ layout: post
 title: "Ionic Native y buenas prácticas"
 tags: [native]
 date: 2017-05-26
-categories: ionic2
-author: nicobytes
+categories: mobile
+author: javico2609
 cover: "/blog//images/posts/ionic2/2016-07-05-ionic-native/cover.jpg"
 ---
 
